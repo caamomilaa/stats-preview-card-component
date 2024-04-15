@@ -1,0 +1,22 @@
+.card{
+    width: 327px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-card);
+    border-radius: 8px;
+    margin-inline: 1.5rem;
+    margin-block: 5.5rem;
+}
+.card__main{
+    padding: 1.9688rem;
+    text-align: center;
+}
+.card__top{
+    margin-bottom: 2.5rem;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

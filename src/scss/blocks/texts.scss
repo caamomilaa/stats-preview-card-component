@@ -1,1 +1,19 @@
-
+.text--purple{
+    color: var(--color-purple);
+}
+.text{
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+}
+.text--bold{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.section__text{
+    font-family: var(--font-lexenddeca);
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.0625rem;
+}
