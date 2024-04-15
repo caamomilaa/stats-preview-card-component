@@ -1,22 +1,59 @@
-.card{
-    width: 327px;
-    display: flex;
-    justify-content: center;
+@use '../mixins/responsive.scss' as *;
+
+.card {
+  width: 327px;
+  height: 780p;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color-card);
+  border-radius: 8px;
+  margin-inline: 1.5rem;
+  margin-block: 5.5rem;
+
+  @include responsive(desktop) {
+    flex-direction: row-reverse;
+    width: 69.375rem;
+    height: 27.875rem;
+    text-align: left;
+    margin-inline: auto;
+  }
+}
+.card__main {
+  padding: 1.9688rem;
+  text-align: center;
+  @include responsive(desktop) {
+    text-align: left;
+    padding: 71px 95px 71px 71px;
+    width: 570px;
+  }
+}
+.card__top {
+  margin-bottom: 2.5rem;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  @include responsive(desktop) {
+    flex-direction: row;
+  }
+}
+.image {
+  background-image: url(../../assets/images/image-header-mobile.jpg);
+  background-repeat: no-repeat;
+  width: 20.4375rem;
+  height: 15rem;
+  @include responsive(desktop) {
+    width: 33.75rem;
+    height: 27.875rem;
+    background-image: url(../../assets/images/image-header-desktop.jpg);
+  }
+}
+.section__item {
+  display: flex;
+  @include responsive(desktop) {
     flex-direction: column;
-    background-color: var(--color-card);
-    border-radius: 8px;
-    margin-inline: 1.5rem;
-    margin-block: 5.5rem;
-}
-.card__main{
-    padding: 1.9688rem;
-    text-align: center;
-}
-.card__top{
-    margin-bottom: 2.5rem;
-}
-.section{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    padding-right: 63px;
+  }
 }
